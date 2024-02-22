@@ -1,26 +1,29 @@
 <!-- Discover page -->
 <html>
     <head>
+        <title>Pet Finder • Discover</title>
         <meta charset="utf-16" />
-    <link href="./discover.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="./discover.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Wendy One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Inika' rel='stylesheet'>
     </head>
     <body>
         <nav>
-            <!-- Hamburger menu -->
-            <!-- Name of page -->
+            <button class="hamburger-menu"> <i class="fa fa-bars"></i> </button>
+            <h1>🔎 Discover</h1>
         </nav>
         <main>
-            <!-- No Button -->
-            <!-- Main Animal Content -->
-            <section>
-                <!-- Animal Photo -->
-                <img>
-                <!-- About Animal Text -->
-                <section>
+            <button class="no-button" onclick="handleNo()">ｘ</button>
+            <section id="animal-container">
+                <img id="animal-photo" src="./images/cat.jpg" alt="Animal Photo">
+                <section id="animal-info">
+                    <h2 class="petName"> Mr. Whiskers </h2>
+                    <p class="location">San Jose, CA</p>
+                    <p class="petInformation">Hello potential paw-rents! I enjoy long naps in sunny spots, chasing laser dots, and lots of pets. Swipe right to get to know me!</p>
                 </section>
             </section>
-            <!-- Yes Button -->
+            <button class="yes-button" onclick="handleYes()">✓</button>
         </main>
     </body>
 </html>
