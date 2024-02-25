@@ -1,0 +1,60 @@
+.main {
+    margin: 0px 50px;
+}
+
+.hidden{
+    display: none;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* cat and dog gifs */
+.row{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin: 0 auto;
+}
+.col{
+    flex: 50%;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.col img {
+    border: 5px solid #794424;
+    border-radius: 50%;
+    max-width: 100px;
+}
+
+section h1,h2 {
+    text-align: center;
+}
+
+
+form {
+    font-family: fantasy;
+}
+
+#sec1 {background-color: antiquewhite;}
+#sec2 {background-color: azure;}
+#sec3 {background-color: cornsilk;}
+
+.hidden {
+    display: none;
+}
+
+/* Checkboxes */
+
+
+/*stack gifs on top of each other*/
+@media screen and (max-width: 700px) {
+    .column {
+      width: 100%;
+    }
+  }
