@@ -3,7 +3,11 @@
     <head>
         <title>Preferences</title>
         <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="preferences.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script defer src="preferences.js"></script>
+        <meta charset="UTF-8">
+
     </head>
 
     <body>
@@ -16,5 +20,69 @@
               <i class="fa fa-bars"></i>
             </a>
         </header>
+
+        <main>
+            <section id="sec1">
+                <h1>I am looking for a</h1>
+                <div class="row">
+                    <div class="col">
+                        <img src="cat.gif" alt="animated graphic of a cat batting a butterfly" id="cat">
+                    </div>
+                    <div class="col">
+                        <img src="dog.gif" alt="animated graphic of a dog wagging its tail" id="dog">
+                    </div>
+                </div>
+            </section>
+
+            <section id="sec2" class="hidden">
+                <h2>Cat Qualities</h2>
+                <form id="catQualities">
+                    <h3>Full-Grown Size</h3>
+                        <input type="checkbox" id="size1cat" name="size" value="Small">
+                            <label for="size1cat"> Small (<6) </label><br>
+                        <input type="checkbox" id="size2cat" name="size" value="Medium">
+                            <label for="size2cat"> Medium (7-11)</label><br>
+                        <input type="checkbox" id="size3cat" name="size" value="Large">
+                            <label for="size3cat"> Large(>12)</label><br>
+                        <br>
+                    <h3>Current Age</h3>
+                    <input type="checkbox" id="age1cat" name="age" value="Young">
+                        <label for="age1cat"> 0-12 months </label><br>
+                    <input type="checkbox" id="age2cat" name="age" value="Medium">
+                        <label for="age2cat"> Kitten (1-2 years)</label><br>
+                    <input type="checkbox" id="age3cat" name="age" value="Adult">
+                        <label for="age3cat"> Adult (3-10 years)</label><br>
+                    <input type="checkbox" id="age4cat" name="age" value="Senior">
+                        <label for="age4cat"> Senior (>11 years)</label><br>
+                </form>
+            </section>
+            <section id="sec3" class="hidden">
+                <h2>Dog Qualities</h2>
+                <form id="dogQualities">
+                    <h3>Full-Grown Size</h3>
+                        <input type="checkbox" id="size1" name="size" value="Small">
+                            <label for="size1"> Small (<25) </label><br>
+                        <input type="checkbox" id="size2" name="size" value="Medium">
+                            <label for="size2"> Medium (25-59)</label><br>
+                        <input type="checkbox" id="size3" name="size" value="Large">
+                            <label for="size3"> Large(60-90)</label><br>
+                        <input type="checkbox" id="size4" name="size" value="Extra-Large">
+                            <label for="size4"> Extra-Large(>90)</label><br><br>
+                    <h3>Current Age</h3>
+                    <input type="checkbox" id="age1" name="age" value="Young">
+                        <label for="age1"> 0-12 months </label><br>
+                    <input type="checkbox" id="age2" name="age" value="Medium">
+                        <label for="age2"> Puppy (1-2 years)</label><br>
+                    <input type="checkbox" id="age3" name="age" value="Adult">
+                        <label for="age3"> Adult (3-8 years)</label><br>
+                    <input type="checkbox" id="age4" name="age" value="Senior">
+                        <label for="age4"> Senior (>9 years)</label><br>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            Pawsitive Pairings LLC
+        </footer>
     </body>
 </html>
