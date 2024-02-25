@@ -23,10 +23,10 @@
 
         <div class="container" id="mainLogin">
         <form>
-            <div id="welcome">
-                <h1 style="text-align: center;">Welcome</h1>
-                <img src="Pawsitive.png" alt="circular logo with a cat and a dog" style="width: 70%;">
-            </div>
+          <div id="welcome">
+            <h1 style="text-align: center;">Welcome</h1>
+            <img src="Pawsitive.png" alt="circular logo with a cat and a dog" style="width: 70%;">
+          </div>
             <label for="uname"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -41,22 +41,23 @@
         </div>
         
         <div id="create" class="modal">
-          <form class="modal-content animate">
+          <form onsubmit="return ValRedir()" action="preferences.html" class="modal-content animate">
             <div class="imgcontainer">
               <span onclick="document.getElementById('create').style.display='none'" class="close" title="Close Modal">&times;</span>
-              <img src="Pawsitive.png" alt="Avatar" class="avatar">
+              <img src="Pawsitive.png" alt="circular logo with a cat and a dog" class="avatar">
             </div>
 
             <div class="container">
               <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" required>
+              <input type="text" placeholder="Enter Username" name="uname" id="newUname" required>
         
                 <label for="psw"><b>Create Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input type="password" placeholder="Enter Password" name="psw" id="newPW" required>
                 <label for="psw-repeat"><b>Repeat Password</b></label>
                 <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
                 
-              <button type="submit">Create Account</button>
+                <button type="submit">Create Account</button>
+              
               <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
               </label>
