@@ -30,3 +30,22 @@ function navBar() {
       x.className = "topnav";
     }
   }
+
+  //create account, submit button
+  function ValRedir(event) {
+    event.preventDefault();
+    let uname = document.getElementById("newUname").value;
+    let newpw = document.getElementById("newPW").value;
+    let repeatpw = document.getElementById("psw-repeat").value;
+
+    if(uname=="" || newpw=="" || repeatpw==""){
+      alert("All fields must be filled out");
+      return false;
+    }
+    if (newpw != repeatpw) {
+      alert("Passwords must match");
+      return false;
+    }
+    //Need to add more validation requirements
+    return true;
+  }
