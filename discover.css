@@ -1,103 +1,104 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #F3F1F1;
-    color: #393737;
-    font-family: 'Wendy One';
-    font-size: xx-large;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f3f1f1;
+  color: #393737;
+  font-family: "Wendy One";
+  font-size: xx-large;
 }
 
 .hamburger-menu {
-    order: -1;
-    font-size: 40px;
-    cursor: pointer;
-    border: none;
-    background-color: none;
+  order: -1;
+  font-size: 40px;
+  cursor: pointer;
+  border: none;
+  background-color: none;
 }
 
 h1 {
-    margin: 0;
-    flex-grow: 1;
-    text-align: center;
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
 }
 
 h2 {
-    color: #393737;
-    padding: 0;
-    margin-bottom: 0;
+  color: #393737;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 p {
-    color: #625F5F;
+  color: #625f5f;
 }
 
 main {
-    max-width: 110ch;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    font-family: 'Inika';
+  max-width: 110ch;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: "Inika";
 }
 
 .no-button {
-    font-size: 20px;
-    font-weight: bolder;
-    padding: 25px 25px;
-    cursor: pointer;
-    border: none;
-    border-radius: 100px;
-    background-color: #D18585;
-    color: white;
-    margin-right: 30px;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 25px 25px;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  background-color: #d18585;
+  color: white;
+  margin-right: 30px;
 }
 
 .yes-button {
-    font-size: 20px;
-    font-weight: bolder;
-    padding: 25px 27px;
-    cursor: pointer;
-    border: none;
-    border-radius: 100px;
-    background-color: #A3C3AA;
-    color: white;
-    margin-left: 30px;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 25px 27px;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  background-color: #a3c3aa;
+  color: white;
+  margin-left: 30px;
 }
 
 #animal-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 #animal-photo {
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 10px;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 #animal-info {
-    width: 100%;
-    margin: 0 auto;
-    background-color:#F3F1F1;
-    border-radius: 10px;
-    text-align: left;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f3f1f1;
+  border-radius: 10px;
+  text-align: left;
 }
 
 #animal-info .location {
-    margin-top: 0;
+  margin-top: 0;
 }
 
-#animal-info h2, #animal-info p {
-    padding: 0 20px;
+#animal-info h2,
+#animal-info p {
+  padding: 0 20px;
 }
