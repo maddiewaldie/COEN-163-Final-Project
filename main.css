@@ -22,7 +22,7 @@ nav {
   font-size: 40px;
   cursor: pointer;
   border: none;
-  background-color: none;
+  background-color: transparent;
 }
 
 h1 {
