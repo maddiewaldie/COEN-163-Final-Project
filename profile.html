@@ -7,6 +7,7 @@
   <link href="./main.css" rel="stylesheet" />
   <link href="./profile.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="profile.js" defer></script>
 </head>
 
 <body>
@@ -16,19 +17,51 @@
   </nav>
   <main>
     <section id="profile-container">
-      <section id="profile-header">
-        <img id="profile-photo" src="images/Profile-pic.png" alt="Profile Photo" />
-        <section id="profile-info">
-          <h2 class="profile-name">Timothy Chalamet</h2>
-          <p class="profile-email">tchalamet@gmail.com</p>
-          <p class="profile-phone">408-123-4567</p>
-          <p class="profile-location">San Jose, CA</p>
-          <section id="profile-buttons">
-            <button id="edit-profile">Edit Profile</button>
-            <button id="logout">Log Out</button>
-          </section>
+
+        <section id="profile-header">
+            <img id="profile-photo" src="images/Profile-pic.png" alt="Profile Photo" />
+            <section id="profile-info">
+            <h2 class="profile-name">Timothy Chalamet</h2>
+            <p class="profile-email">tchalamet@gmail.com</p>
+            <p class="profile-phone">408-123-4567</p>
+            <p class="profile-location">San Jose, CA</p>
+            <section id="profile-buttons">
+                <button id="preferences">Profile Preferences</button>
+                <button id="logout" onclick="goToLogout()">Log Out</button>
+            </section>
+            </section>
         </section>
-      </section>
+
+        <section id="profile-body">
+            <section id="profile-settings">
+            <div class="settings-title">
+                <h2>Profile Settings</h2>
+            </div>
+            <section class="settings-container">
+                <form id="profile-form">
+                    <div class="setting">
+                        <h3>Username</h3>
+                        <input type="text" id="username" />
+                        <h3>Email</h3>
+                        <input type="email" id="email" />
+                    </div>
+                    <div class="setting">
+                        <h3>First Name</h3>
+                        <input type="text" id="first-name" />
+                        <h3>Last Name</h3>
+                        <input type="text" id="last-name" />
+                    </div>
+                    <div class="setting">
+                        <h3>Phone Number</h3>
+                        <input type="tel" id="phone" />
+                        <h3>Location</h3>
+                        <input type="text" id="location" />
+                    </div>
+                    <h3>Notifications</h3>
+                    <label for="notifications">Enable Notifications</label>
+                    <input type="checkbox" id="notifications" />
+                </form>
+            </section>
     </section>
   </main>
 </body>
