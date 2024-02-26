@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="base.css">
         <link rel="stylesheet" href="preferences.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script defer src="preferences.js"></script>
         <meta charset="UTF-8">
 
@@ -26,10 +27,10 @@
                 <h1>I am looking for a</h1>
                 <div class="row">
                     <div class="col">
-                        <img src="images/cat.gif" alt="animated graphic of a cat batting a butterfly" id="cat">
+                        <img src="cat.gif" alt="animated graphic of a cat batting a butterfly" id="cat">
                     </div>
                     <div class="col">
-                        <img src="images/dog.gif" alt="animated graphic of a dog wagging its tail" id="dog">
+                        <img src="dog.gif" alt="animated graphic of a dog wagging its tail" id="dog">
                     </div>
                 </div>
             </section>
@@ -37,46 +38,117 @@
             <section id="sec2" class="hidden">
                 <h2>Cat Qualities</h2>
                 <form id="catQualities">
-                    <h3>Full-Grown Size</h3>
-                        <input type="checkbox" id="size1cat" name="size" value="Small">
-                            <label for="size1cat"> Small (<6) </label><br>
-                        <input type="checkbox" id="size2cat" name="size" value="Medium">
-                            <label for="size2cat"> Medium (7-11)</label><br>
-                        <input type="checkbox" id="size3cat" name="size" value="Large">
-                            <label for="size3cat"> Large(>12)</label><br>
-                        <br>
-                    <h3>Current Age</h3>
-                    <input type="checkbox" id="age1cat" name="age" value="Young">
-                        <label for="age1cat"> 0-12 months </label><br>
-                    <input type="checkbox" id="age2cat" name="age" value="Medium">
-                        <label for="age2cat"> Kitten (1-2 years)</label><br>
-                    <input type="checkbox" id="age3cat" name="age" value="Adult">
-                        <label for="age3cat"> Adult (3-10 years)</label><br>
-                    <input type="checkbox" id="age4cat" name="age" value="Senior">
-                        <label for="age4cat"> Senior (>11 years)</label><br>
+                        <div class="selections left">
+                            <h3>Full-Grown Size</h3>
+                            <label class="container">Small (<6)
+                                <input type="checkbox" id="size1cat" name="size" value="Small">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Medium (7-11)
+                                <input type="checkbox" id="size2cat" name="size" value="Medium">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Large(>12)
+                                <input type="checkbox" id="size3cat" name="size" value="Large">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+    
+                        <div class="selections center">
+                            <h3>Current Age</h3>
+                            <label class="container">0-12 months
+                                <input type="checkbox" id="age1cat" name="age" value="Young">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Kitten (1-2 years)
+                                <input type="checkbox" id="age2cat" name="age" value="Medium">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Adult (3-10 years)
+                                <input type="checkbox" id="age3cat" name="age" value="Adult">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Senior (>11 years)
+                                <input type="checkbox" id="age4cat" name="age" value="Senior">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                        <div class="selections right">
+                            <h3>Energy Levels</h3>
+                            <label class="container">Sleepy 
+                                <input type="checkbox" id="energy1cat" name="energy" value="Sleepy">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Average
+                                <input type="checkbox" id="energy2cat" name="energy" value="Average">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Very Active
+                                <input type="checkbox" id="energy3cat" name="size" value="Active">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                    
                 </form>
             </section>
             <section id="sec3" class="hidden">
                 <h2>Dog Qualities</h2>
                 <form id="dogQualities">
-                    <h3>Full-Grown Size</h3>
-                        <input type="checkbox" id="size1" name="size" value="Small">
-                            <label for="size1"> Small (<25) </label><br>
-                        <input type="checkbox" id="size2" name="size" value="Medium">
-                            <label for="size2"> Medium (25-59)</label><br>
-                        <input type="checkbox" id="size3" name="size" value="Large">
-                            <label for="size3"> Large(60-90)</label><br>
-                        <input type="checkbox" id="size4" name="size" value="Extra-Large">
-                            <label for="size4"> Extra-Large(>90)</label><br><br>
-                    <h3>Current Age</h3>
-                    <input type="checkbox" id="age1" name="age" value="Young">
-                        <label for="age1"> 0-12 months </label><br>
-                    <input type="checkbox" id="age2" name="age" value="Medium">
-                        <label for="age2"> Puppy (1-2 years)</label><br>
-                    <input type="checkbox" id="age3" name="age" value="Adult">
-                        <label for="age3"> Adult (3-8 years)</label><br>
-                    <input type="checkbox" id="age4" name="age" value="Senior">
-                        <label for="age4"> Senior (>9 years)</label><br>
+                        <div class="selections left">
+                            <h3>Full-Grown Size</h3>
+                            <label class="container">Small (<25)
+                                <input type="checkbox" id="size1dog" name="size" value="Small">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Medium (25-60)
+                                <input type="checkbox" id="size2dog" name="size" value="Medium">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Large(61-84)
+                                <input type="checkbox" id="size3dog" name="size" value="Large">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Extra-Large(>85)
+                                <input type="checkbox" id="size4dog" name="size" value="Large">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                        
+                        <div class="selections center">
+                            <h3>Current Age</h3>
+                            <label class="container">0-12 months
+                                <input type="checkbox" id="age1dog" name="age" value="Young">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Puppy (1-2 years)
+                                <input type="checkbox" id="age2dog" name="age" value="Medium">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Adult (3-8 years)
+                                <input type="checkbox" id="age3dog" name="age" value="Adult">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Senior (>9 years)
+                                <input type="checkbox" id="age4dog" name="age" value="Senior">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+
+                        <div class="selections right">
+                            <h3>Energy Levels</h3>
+                            <label class="container">Sleepy 
+                                <input type="checkbox" id="energy1dog" name="energy" value="Sleepy">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Average
+                                <input type="checkbox" id="energy2dog" name="energy" value="Average">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Very Active
+                                <input type="checkbox" id="energy3dog" name="size" value="Active">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
                 </form>
             </section>
         </main>
