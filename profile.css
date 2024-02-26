@@ -10,7 +10,6 @@
   align-items: center;
   width: 100%;
   padding: 48px;
-  background-color: #f3f1f1;
   color: #393737;
   font-family: "Wendy One";
   font-size: xx-large;
@@ -30,13 +29,12 @@
   align-items: center;
   width: 100%;
   padding: 10px;
-  background-color: #f3f1f1;
   color: #393737;
   font-family: "Wendy One";
   font-size: xx-large;
 }
 
-#edit-profile,
+#preferences,
 #logout {
   font-size: 20px;
   font-weight: bolder;
@@ -46,4 +44,40 @@
   border-radius: 100px;
   background-color: #d18585;
   color: white;
+}
+
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+    background-color: #f3f1f1;
+    color: #393737;
+    font-family: "Wendy One";
+    border-radius: 0px 0px 24px 24px;
+}
+
+.setting {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 48px;
+    color: #393737;
+    font-family: "Wendy One";
+}
+
+.settings-title {
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 25px 25px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    border-radius: 24px 24px 0px 0px;
+    background-color: #f4f4f4;
+    color: white;
 }
