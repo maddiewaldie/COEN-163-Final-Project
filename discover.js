@@ -87,6 +87,26 @@ const petData = {
 let matches = [];
 let currentPetIndex = 1;
 
+
+let startMouseX;
+
+document.addEventListener('mousedown', handleMouseDown, false);
+document.addEventListener('mouseup', handleMouseUp, false);
+
+function handleMouseDown(event) {
+    startMouseX = event.clientX;
+}
+
+function handleMouseUp(event) {
+    const endMouseX = event.clientX;
+    const mouseThreshold = 50;
+    if (endMouseX < startMouseX - mouseThreshold) {
+        handleNo();
+    } else if (endMouseX > startMouseX + mouseThreshold) {
+        handleYes();
+    }
+}
+
 function handleNo() {
     showNextPet();
 }
