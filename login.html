@@ -52,10 +52,18 @@
               <input type="text" placeholder="Enter Username" name="uname" id="newUname" required>
         
                 <label for="psw"><b>Create Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" id="newPW" required>
+                <input type="password" placeholder="Enter Password" name="psw" id="newPW" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least 1 number, 1 one uppercase and lowercase letter, 
+                8 or more characters" required>
                 <label for="psw-repeat"><b>Repeat Password</b></label>
                 <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-                
+                <div id="message">
+                  <h3>Password must contain the following:</h3>
+                  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                  <p id="number" class="invalid">A <b>number</b></p>
+                  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                </div>
                 <button type="submit">Create Account</button>
               
               <label>
