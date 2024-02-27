@@ -4,6 +4,7 @@
 <head>
   <title>Pet Finder • Discover</title>
   <meta charset="utf-16" />
+  <script src="main.js" defer></script>
   <script src="discover.js" defer></script>
   <link href="./main.css" rel="stylesheet" />
   <link href="./discover.css" rel="stylesheet" />
@@ -11,7 +12,12 @@
 </head>
 <body>
   <nav>
-    <button class="hamburger-menu"><i class="fa fa-bars"></i></button>
+    <button class="hamburger-menu" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+    <div class="dropdown-menu" id="menu-dropdown">
+      <a href="profile.html" onclick="goToProfile()">Profile</a>
+      <a href="discover.html" onclick="goToDiscover()">Discover</a>
+      <a href="chat.html" onclick="goToChat()">Chat</a>
+    </div>
     <h1>🔎 Discover</h1>
   </nav>
   <main>

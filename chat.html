@@ -4,6 +4,7 @@
 <head>
   <title>Pet Finder • Chat</title>
   <meta charset="UTF-8" />
+  <script src="main.js" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="main.css" />
@@ -12,7 +13,12 @@
 
 <body>
   <nav>
-    <button class="hamburger-menu"><i class="fa fa-bars"></i></button>
+    <button class="hamburger-menu" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+    <div class="dropdown-menu" id="menu-dropdown">
+      <a href="profile.html" onclick="goToProfile()">Profile</a>
+      <a href="discover.html" onclick="goToDiscover()">Discover</a>
+      <a href="chat.html" onclick="goToChat()">Chat</a>
+  </div>
     <h1><i class="fa fa-comment"></i> Chat</h1>
   </nav>
   <main>
