@@ -44,11 +44,21 @@
   text-align: left;
 }
 
-#animal-info .location {
+#animal-info .petLocation {
   margin-top: 0;
 }
 
 #animal-info h2,
 #animal-info p {
   padding: 0 20px;
+}
+
+#no-more-pets-message {
+  width: 90%;
+  padding: 250px 30px;
+  margin: 20px;
+  background-color: #f3f1f1;
+  border-radius: 10px;
+  text-align: center;
+  display: none;
 }
