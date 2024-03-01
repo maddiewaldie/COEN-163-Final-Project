@@ -13,16 +13,58 @@
 
 <body>
   <nav>
-    <button class="hamburger-menu" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+    <button class="hamburger-menu" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </button>
     <div class="dropdown-menu" id="menu-dropdown">
       <a href="profile.html" onclick="goToProfile()">Profile</a>
       <a href="discover.html" onclick="goToDiscover()">Discover</a>
       <a href="chat.html" onclick="goToChat()">Chat</a>
-  </div>
+    </div>
     <h1><i class="fa fa-comment"></i> Chat</h1>
   </nav>
   <main>
-    <section id="chat-container">chat to go here</section>
+    <aside id="messages">
+      <section>
+        <h2>Kitten 1</h2>
+        <img src="https://placekitten.com/200/200" alt="kitten1" />
+        <p>Lorem ipsum dolor sit amet.</p>
+      </section>
+      <section>
+        <h2>Kitten 2</h2>
+        <img src="https://placekitten.com/200/199" alt="kitten2" />
+        <p>Lorem ipsum dolor sit amet.</p>
+      </section>
+      <section>
+        <h2>Kitten 3</h2>
+        <img src="https://placekitten.com/200/201" alt="kitten3" />
+        <p>Lorem ipsum dolor sit amet.</p>
+      </section>
+      <section>
+        <h2>Kitten 4</h2>
+        <img src="https://placekitten.com/200/202" alt="kitten4" />
+        <p>Lorem ipsum dolor sit amet.</p>
+      </section>
+      <section>
+        <h2>Kitten 5</h2>
+        <img src="https://placekitten.com/200/198" alt="kitten5" />
+        <p>Lorem ipsum dolor sit amet.</p>
+      </section>
+    </aside>
+    <section id="chat-container">
+      <header>
+        <h2>Chat with Kitten 1</h2>
+        <img src="https://placekitten.com/200/200" alt="kitten1" />
+        <p>Last seen online: 1 hour ago</p>
+      </header>
+      <section id="messages-container"></section>
+      <form>
+        <label>
+          <input type="text" id="messageInput" placeholder="Type a message..." />
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
   </main>
 </body>
 
