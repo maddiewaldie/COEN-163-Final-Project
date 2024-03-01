@@ -1,0 +1,53 @@
+main * {
+  box-sizing: border-box;
+}
+
+main {
+  display: block;
+  padding: 0 20px;
+  margin-top: 40px;
+}
+
+#messages section {
+  display: grid;
+  background: #f3f1f1;
+  grid-template: "img h2" "img p";
+  align-items: center;
+  padding: 10px 20px 10px 10px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+#messages section img {
+  grid-area: img;
+  margin-right: 16px;
+}
+
+#messages section h2 {
+  grid-area: h2;
+  margin: 0;
+}
+
+#messages section p {
+  grid-area: p;
+  margin: 0;
+  max-height: 2.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.25em;
+}
+
+img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
+
+#chat-container {
+  display: none;
+  position: absolute;
+  top: 114px;
+  height: calc(100dvh - 114px);
+  width: calc(100vw - 40px);
+  background: white;
+}
