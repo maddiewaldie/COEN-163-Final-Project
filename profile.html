@@ -19,7 +19,7 @@
         <a href="discover.html" onclick="goToDiscover()">Discover</a>
         <a href="chat.html" onclick="goToChat()">Chat</a>
     </div>
-    <h1>🔎 Profile</h1>
+    <h1>👤 Profile</h1>
   </nav>
   <main>
     <section id="profile-container">
@@ -27,16 +27,17 @@
         <section id="profile-header">
             <img id="profile-photo" src="images/Profile-pic.png" alt="Profile Photo" />
             <section id="profile-info">
-            <h2 class="profile-name">Timothy Chalamet</h2>
-            <p class="profile-email">tchalamet@gmail.com</p>
-            <p class="profile-phone">408-123-4567</p>
-            <p class="profile-location">San Jose, CA</p>
-            <section id="profile-buttons">
-                <button id="preferences">Profile Preferences</button>
-                <button id="logout" onclick="goToLogout()">Log Out</button>
-            </section>
+                <h2 class="profile-name">Timothy Chalamet</h2>
+                <p class="profile-email">tchalamet@gmail.com</p>
+                <p class="profile-phone">408-123-4567</p>
+                <p class="profile-location">San Jose, CA</p>
+                <section id="profile-buttons">
+                    <button id="preferences">Profile Preferences</button>
+                    <button id="logout" onclick="goToLogout()">Log Out</button>
+                </section>
             </section>
         </section>
+        
 
         <section id="profile-body">
             <section id="profile-settings">
@@ -63,9 +64,9 @@
                         <h3>Location</h3>
                         <input type="text" id="location" />
                     </div>
-                    <h3>Notifications</h3>
                     <label for="notifications">Enable Notifications</label>
                     <input type="checkbox" id="notifications" />
+                    <button id="submit">Submit</button>
                 </form>
             </section>
     </section>
