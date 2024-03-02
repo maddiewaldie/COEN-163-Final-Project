@@ -36,14 +36,35 @@
 
 #preferences,
 #logout {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bolder;
-  padding: 25px 25px;
+  padding: 18px 18px;
   cursor: pointer;
   border: none;
   border-radius: 100px;
   background-color: #d18585;
   color: white;
+}
+
+#submit {
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 18px 18px;
+  margin-top: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  background-color: #a3c3aa;
+  color: white;
+}
+
+#submit:hover {
+  background-color: #b4c2b7;
+}
+
+#preferences:hover,
+#logout:hover {
+  background-color: #d29d9d;
 }
 
 .settings-container {
@@ -78,6 +99,22 @@
     cursor: pointer;
     border: none;
     border-radius: 24px 24px 0px 0px;
-    background-color: #f4f4f4;
+    background-color: #e3e3e3;
     color: white;
+}
+
+.settings-container > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form > div > h3 {
+    font-size: 24px;
+}
+
+form > div > input {
+    border-radius: 12px;
+    height: 36px;
 }
