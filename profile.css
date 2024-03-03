@@ -58,7 +58,7 @@
   color: white;
 }
 
-#submit:hover {
+#submit:hover, #change-photo:hover {
   background-color: #b4c2b7;
 }
 
