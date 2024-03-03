@@ -4,11 +4,11 @@
 <head>
   <title>Pet Finder • Profile</title>
   <meta charset="utf-16" />
-  <script src="main.js" defer></script>
   <link href="./main.css" rel="stylesheet" />
   <link href="./profile.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="profile.js" defer></script>
+  <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -25,7 +25,10 @@
     <section id="profile-container">
 
         <section id="profile-header">
-            <img id="profile-photo" src="images/Profile-pic.png" alt="Profile Photo" />
+            <div id="photo-container">
+                <img id="profile-photo" src="images/Profile-pic.png" alt="Profile Photo" />
+                <button id="change-photo">Change Photo</button>
+            </div>
             <section id="profile-info">
                 <h2 class="profile-name">Timothy Chalamet</h2>
                 <p class="profile-email">tchalamet@gmail.com</p>
@@ -64,8 +67,6 @@
                         <h3>Location</h3>
                         <input type="text" id="location" />
                     </div>
-                    <label for="notifications">Enable Notifications</label>
-                    <input type="checkbox" id="notifications" />
                     <button id="submit">Submit</button>
                 </form>
             </section>
