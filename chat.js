@@ -29,11 +29,14 @@ const chat = () => {
     e.preventDefault();
     document.querySelector("#chat-container").style.display = "none";
   });
-  document
-    .querySelector("button[type=submit]")
-    .addEventListener("click", (e) => {
-      e.preventDefault();
-    });
+  document.querySelector("button[type=submit]").addEventListener("click", (e) => {
+    sendMessage(e);
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      sendMessage(e);
+    }
+  });
 };
 
 const setCurrentPet = (currentPet) => {
@@ -73,5 +76,34 @@ const setCurrentPet = (currentPet) => {
     body.appendChild(message);
   });
 };
+
+const sendMessage = (e) => {
+  e.preventDefault();
+  const message = document.querySelector("#messageInput").value.trim();
+  document.querySelector("#messageInput").value = "";
+  if (message === "") {
+    return;
+  }
+
+  const iframe = document.querySelector("iframe");
+  const body = iframe.contentDocument.querySelector("body");
+
+  const messageInstance = document.createElement("section");
+  messageInstance.classList.add("user");
+
+  const p = document.createElement("p");
+  p.textContent = message;
+
+  const img = document.createElement("img");
+  img.src = "images/Profile-pic.png";
+  img.setAttribute("alt", "user avatar");
+
+  messageInstance.appendChild(p);
+  messageInstance.appendChild(img);
+
+  body.appendChild(messageInstance);
+
+  iframe.contentWindow.scrollTo(0, iframe.contentDocument.body.scrollHeight);
+}
 
 chat();

@@ -6,6 +6,8 @@
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 section {
@@ -17,11 +19,25 @@ section {
   place-items: center;
   margin: 20px 10px;
   border-radius: 10px;
+  align-self: flex-start;
 }
 
-img {
+section.user {
+  align-self: flex-end;
+}
+
+section img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   margin-right: 20px;
+}
+
+section.user img {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+section p {
+  line-height: 1.5em;
 }
