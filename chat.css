@@ -204,6 +204,6 @@ img {
 
 #messages-container {
   width: 100%;
-  height: calc(100% - 218px);
+  height: calc(100% - 216px);
   overflow-x: hidden;
 }
