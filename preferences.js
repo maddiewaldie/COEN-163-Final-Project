@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
         return window.getComputedStyle(image).borderColor;}
 
     function changeBorderColor(image) {
-        image.style.border = "5px solid #ffae00";}
+        image.style.border = "5px solid #a3c3aa";}
 
     catGIF.addEventListener("click", function () {
-        if (getBorderColor(catGIF) === "rgb(255, 174, 0)") {
-            catGIF.style.border = "5px solid #794424"; //revert to unselected
+        if (getBorderColor(catGIF) === "rgb(163, 195, 170)") {
+            catGIF.style.border = "5px solid #d18585"; //revert to unselected
             catForm.classList.add("hidden");
         } else {
             changeBorderColor(catGIF);
@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     dogGIF.addEventListener("click", function () {
-        if (getBorderColor(dogGIF) === "rgb(255, 174, 0)") {
-            dogGIF.style.border = "5px solid #794424";//revert to unselected
+        if (getBorderColor(dogGIF) === "rgb(163, 195, 170)") {
+            dogGIF.style.border = "5px solid #d18585";//revert to unselected
             dogForm.style.display="none";
         } else {
             changeBorderColor(dogGIF);
