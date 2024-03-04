@@ -44,9 +44,7 @@ form .container{
     font-family: fantasy;
 }
 
-#sec1 {background-color: antiquewhite;}
-#sec2 {background-color: azure;}
-#sec3 {background-color: cornsilk;}
+#sec1, #sec2, #sec3 {background-color: #F3F1F1;}
 
 .hidden {
     display: none;
