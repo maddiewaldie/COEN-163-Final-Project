@@ -1,68 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Login</title>
-        <script defer src="login.js"></script>
-        <link rel="stylesheet" href="login.css">
-        <link rel="stylesheet" href="base.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="./main.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
 
-    <body>
+<head>
+  <title>Login</title>
+  <script defer src="login.js"></script>
+  <link href="./main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="login.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
 
-        <div class="container" id="mainLogin">
-        <form>
-          <div id="welcome">
-            <h1 style="text-align: center;">Welcome</h1>
-            <img src="images/Pawsitive.png" alt="circular logo with a cat and a dog" style="width: 70%;">
-          </div>
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+<body>
+  <nav>
+    <button class="hamburger-menu" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="dropdown-menu" id="menu-dropdown">
+      <a href="profile.html" onclick="goToProfile()">Profile</a>
+      <a href="discover.html" onclick="goToDiscover()">Discover</a>
+      <a href="chat.html" onclick="goToChat()">Chat</a>
+    </div>
+    <h1><i class="fa-solid fa-list-check"></i> Preferences</h1>
+  </nav>
+  <main class="container" id="mainLogin">
+    <form>
+      <div id="welcome">
+        <h1 style="text-align: center">Welcome</h1>
+        <img src="images/Pawsitive.png" alt="circular logo with a cat and a dog" style="width: 70%" />
+      </div>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required />
 
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="password" id="password" required>
-            <i class="bi bi-eye-slash" id="togglePassword"></i>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-            <button type="submit">Login</button>
-        </form>
-            
-            <button onclick="document.getElementById('create').style.display='block'" style="width:auto; background-color: hsl(133, 36%, 90%); ">Create an Account</button>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" id="password" required />
+      <i class="bi bi-eye-slash" id="togglePassword"></i>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+      <button type="submit">Login</button>
+    </form>
+
+    <button onclick="document.getElementById('create').style.display='block'"
+      style="width: auto; background-color: hsl(133, 36%, 90%)">
+      Create an Account
+    </button>
+  </main>
+
+  <div id="create" class="modal">
+    <form onsubmit="return ValRedir()" action="preferences.html" class="modal-content animate">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('create').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <img src="images/Pawsitive.png" alt="circular logo with a cat and a dog" class="avatar" />
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" id="newUname" required />
+
+        <label for="psw"><b>Create Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="newPW"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least 1 number, 1 one uppercase and lowercase letter, 
+                8 or more characters" required />
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required />
+        <div id="message">
+          <h3>Password must contain the following:</h3>
+          <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+          <p id="capital" class="invalid">
+            A <b>capital (uppercase)</b> letter
+          </p>
+          <p id="number" class="invalid">A <b>number</b></p>
+          <p id="length" class="invalid">Minimum <b>8 characters</b></p>
         </div>
-        
-        <div id="create" class="modal">
-          <form onsubmit="return ValRedir()" action="preferences.html" class="modal-content animate">
-            <div class="imgcontainer">
-              <span onclick="document.getElementById('create').style.display='none'" class="close" title="Close Modal">&times;</span>
-              <img src="images/Pawsitive.png" alt="circular logo with a cat and a dog" class="avatar">
-            </div>
+        <button type="submit">Create Account</button>
 
-            <div class="container">
-              <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" id="newUname" required>
-        
-                <label for="psw"><b>Create Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" id="newPW" 
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least 1 number, 1 one uppercase and lowercase letter, 
-                8 or more characters" required>
-                <label for="psw-repeat"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-                <div id="message">
-                  <h3>Password must contain the following:</h3>
-                  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-                  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-                  <p id="number" class="invalid">A <b>number</b></p>
-                  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-                </div>
-                <button type="submit">Create Account</button>
-              
-              <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-            </div>
-          </form>
-        </div>
-    </body>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" /> Remember
+          me
+        </label>
+      </div>
+    </form>
+  </div>
+</body>
+
 </html>
