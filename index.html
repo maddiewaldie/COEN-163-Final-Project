@@ -3,6 +3,7 @@
 
 <head>
   <title>Login</title>
+  <script src="main.js" defer></script>
   <script defer src="login.js"></script>
   <link href="./main.css" rel="stylesheet" />
   <link rel="stylesheet" href="login.css" />
@@ -37,12 +38,11 @@
       <i class="bi bi-eye-slash" id="togglePassword"></i>
       <span class="psw">Forgot <a href="#">password?</a></span>
       <button type="submit">Login</button>
+      <button onclick="document.getElementById('create').style.display='block'"
+        style="width: auto; background-color: hsl(133, 36%, 90%)">
+        Create an Account
+      </button>
     </form>
-
-    <button onclick="document.getElementById('create').style.display='block'"
-      style="width: auto; background-color: hsl(133, 36%, 90%)">
-      Create an Account
-    </button>
   </main>
 
   <div id="create" class="modal">

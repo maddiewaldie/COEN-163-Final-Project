@@ -1,3 +1,7 @@
+#mainLogin {
+  flex-direction: column;
+}
+
 main button,
 #create button {
   background-color: #ffae00;

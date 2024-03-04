@@ -15,62 +15,63 @@
   <nav>
     <button class="hamburger-menu" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
     <div class="dropdown-menu" id="menu-dropdown">
-        <a href="profile.html" onclick="goToProfile()">Profile</a>
-        <a href="discover.html" onclick="goToDiscover()">Discover</a>
-        <a href="chat.html" onclick="goToChat()">Chat</a>
+      <a href="profile.html" onclick="goToProfile()">Profile</a>
+      <a href="discover.html" onclick="goToDiscover()">Discover</a>
+      <a href="chat.html" onclick="goToChat()">Chat</a>
+      <a href="index.html" onclick="goToLogin()">Logout</a>
     </div>
     <h1>👤 Profile</h1>
   </nav>
   <main>
     <section id="profile-container">
 
-        <section id="profile-header">
-            <div id="photo-container">
-                <img id="profile-photo" src="images/Profile-pic.png" alt="Profile Photo" />
-                <button id="change-photo">Change Photo</button>
-            </div>
-            <section id="profile-info">
-                <h2 class="profile-name">Timothy Chalamet</h2>
-                <p class="profile-email">tchalamet@gmail.com</p>
-                <p class="profile-phone">408-123-4567</p>
-                <p class="profile-location">San Jose, CA</p>
-                <section id="profile-buttons">
-                    <button id="preferences">Profile Preferences</button>
-                    <button id="logout" onclick="goToLogout()">Log Out</button>
-                </section>
-            </section>
+      <section id="profile-header">
+        <div id="photo-container">
+          <img id="profile-photo" src="images/Profile-pic.png" alt="Profile Photo" />
+          <button id="change-photo">Change Photo</button>
+        </div>
+        <section id="profile-info">
+          <h2 class="profile-name">Timothy Chalamet</h2>
+          <p class="profile-email">tchalamet@gmail.com</p>
+          <p class="profile-phone">408-123-4567</p>
+          <p class="profile-location">San Jose, CA</p>
+          <section id="profile-buttons">
+            <button id="preferences">Profile Preferences</button>
+            <button id="logout" onclick="goToLogin()">Log Out</button>
+          </section>
         </section>
-        
+      </section>
 
-        <section id="profile-body">
-            <section id="profile-settings">
-            <div class="settings-title">
-                <h2>Profile Settings</h2>
-            </div>
-            <section class="settings-container">
-                <form id="profile-form">
-                    <div class="setting">
-                        <h3>Username</h3>
-                        <input type="text" id="username" />
-                        <h3>Email</h3>
-                        <input type="email" id="email" />
-                    </div>
-                    <div class="setting">
-                        <h3>First Name</h3>
-                        <input type="text" id="first-name" />
-                        <h3>Last Name</h3>
-                        <input type="text" id="last-name" />
-                    </div>
-                    <div class="setting">
-                        <h3>Phone Number</h3>
-                        <input type="tel" id="phone" />
-                        <h3>Location</h3>
-                        <input type="text" id="location" />
-                    </div>
-                    <button id="submit">Submit</button>
-                </form>
-            </section>
-    </section>
+
+      <section id="profile-body">
+        <section id="profile-settings">
+          <div class="settings-title">
+            <h2>Profile Settings</h2>
+          </div>
+          <section class="settings-container">
+            <form id="profile-form">
+              <div class="setting">
+                <h3>Username</h3>
+                <input type="text" id="username" />
+                <h3>Email</h3>
+                <input type="email" id="email" />
+              </div>
+              <div class="setting">
+                <h3>First Name</h3>
+                <input type="text" id="first-name" />
+                <h3>Last Name</h3>
+                <input type="text" id="last-name" />
+              </div>
+              <div class="setting">
+                <h3>Phone Number</h3>
+                <input type="tel" id="phone" />
+                <h3>Location</h3>
+                <input type="text" id="location" />
+              </div>
+              <button id="submit">Submit</button>
+            </form>
+          </section>
+        </section>
   </main>
 </body>
 

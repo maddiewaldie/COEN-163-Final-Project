@@ -10,13 +10,17 @@
   <link href="./discover.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
+
 <body>
   <nav>
-    <button class="hamburger-menu" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+    <button class="hamburger-menu" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </button>
     <div class="dropdown-menu" id="menu-dropdown">
       <a href="profile.html" onclick="goToProfile()">Profile</a>
       <a href="discover.html" onclick="goToDiscover()">Discover</a>
       <a href="chat.html" onclick="goToChat()">Chat</a>
+      <a href="index.html" onclick="goToLogin()">Logout</a>
     </div>
     <h1>🔎 Discover</h1>
   </nav>
@@ -29,7 +33,7 @@
         <p class="petLocation"></p>
         <p class="petInformation"></p>
       </section>
-      <h2 id="no-more-pets-message" style="display: none;"></h2>
+      <h2 id="no-more-pets-message" style="display: none"></h2>
     </section>
     <button class="yes-button" onclick="handleYes()">✓</button>
   </main>
