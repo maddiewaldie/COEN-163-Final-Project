@@ -71,9 +71,7 @@ img {
   display: grid;
   gap: 10px 0;
   grid-template-rows: auto auto auto;
-  grid-template-columns: 95px auto;
   padding: 20px 10px;
-  margin-bottom: 25px;
   background: #eee9e9;
 }
 
@@ -102,7 +100,7 @@ img {
   grid-row: 3/4;
   display: flex;
   justify-content: space-between;
-  max-width: 300px;
+  margin: 0 10px 0 40px;
 }
 
 #chat-container header .buttons .fa-solid {
@@ -114,6 +112,43 @@ img {
 #chat-container form {
   position: absolute;
   bottom: 0;
+  width: 100%;
+  background: #f3f1f1;
+  padding: 24px 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#chat-container form label {
+  display: flex;
+  width: 100%;
+  margin: 0 10px 0 10px;
+}
+
+#chat-container form label input {
+  width: 100%;
+}
+
+#chat-container form button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#chat-container form button span {
+  color: #625f5f;
+}
+
+#chat-container form button[type="submit"] {
+  font-size: 36px;
+  margin-right: 10px;
+}
+
+#chat-container form input {
+  line-height: 30px;
+  background: transparent;
+  border: none;
 }
 
 @media screen and (min-width: 450px) {
@@ -161,4 +196,14 @@ img {
     left: 45%;
     max-width: 55%;
   }
+
+  #backButton {
+    display: none;
+  }
+}
+
+#messages-container {
+  width: 100%;
+  height: calc(100% - 218px);
+  overflow-x: hidden;
 }

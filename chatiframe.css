@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  min-height: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  background: #f3f1f1;
+  color: #625f5f;
+  max-width: 75%;
+  padding: 12px 24px;
+  place-items: center;
+  margin: 20px 10px;
+  border-radius: 10px;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}

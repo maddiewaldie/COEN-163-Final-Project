@@ -39,12 +39,17 @@
           <i class="fa-solid fa-ellipsis-vertical"></i>
         </div>
       </header>
-      <section id="messages-container"></section>
+      <iframe id="messages-container" src="chatiframe.html" frameborder="0"></iframe>
       <form>
+        <button id="backButton">
+          <span class="fa-solid fa-chevron-left"></span>
+        </button>
         <label>
           <input type="text" id="messageInput" placeholder="Type a message..." />
         </label>
-        <button type="submit">Send</button>
+        <button type="submit">
+          <span class="fa-solid fa-caret-right"></span>
+        </button>
       </form>
     </section>
   </main>

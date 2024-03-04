@@ -8,7 +8,7 @@ const petData = {
             "petAge": "2 years",
             "petEnergyLevel": "High",
             "petLocation": "San Francisco, CA",
-            "petInformation": "Hi there! I'm Mr. Whiskers, a playful cat who loves climbing and cuddling. I'm looking for a loving home with plenty of toys and cozy spots. Swipe right to meet me!",
+            "petInformation": "Hi there! I'm Mr Whiskers, a playful cat who loves climbing and cuddling. I'm looking for a loving home with plenty of toys and cozy spots. Swipe right to meet me!",
             "petPhoto": "./images/petPhotos/cat1.jpg"
         },
         "pet2": {
