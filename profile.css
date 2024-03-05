@@ -3,6 +3,10 @@
   min-height: 0;
 }
 
+main {
+  display: block;
+}
+
 #profile-container {
   display: flex;
   flex-direction: column;
