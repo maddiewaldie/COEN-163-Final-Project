@@ -1,18 +1,29 @@
-const prefButton = document.querySelector('#preferences');
-prefButton.addEventListener('click', function (e) {
-  window.location.href = "preferences.html";
-}); 
+// Purpose: To handle the profile page functionality
 
 const profileForm = document.getElementById('profile-form');
 profileForm.addEventListener('submit', function(event) {
   event.preventDefault();
 
   // Gather form values
+  const userName = document.getElementById('username').value;
   const firstName = document.getElementById('first-name').value;
   const lastName = document.getElementById('last-name').value;
   const email = document.getElementById('email').value;
   const phone = document.getElementById('phone').value;
   const location = document.getElementById('location').value;
+
+  // If form values are empty, notify of error, else empty input fields
+  if (!userName || !firstName || !lastName || !email || !phone || !location) {
+    alert('Please fill out all fields');
+    return;
+  } else {
+    document.getElementById('username').value = '';
+    document.getElementById('first-name').value = '';
+    document.getElementById('last-name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('phone').value = '';
+    document.getElementById('location').value = '';
+  }
 
   // Update profile elements
   const profileName = document.querySelector('.profile-name');
