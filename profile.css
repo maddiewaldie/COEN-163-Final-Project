@@ -63,7 +63,7 @@ main {
 }
 
 #preferences,
-#logout {
+#logout, #cancel {
   font-size: 16px;
   font-weight: bolder;
   padding: 18px 18px;
@@ -74,7 +74,7 @@ main {
   color: white;
 }
 
-#submit {
+#submit, #save {
   grid-column: 1/3;
   grid-row: 3/4;
   font-size: 16px;
@@ -93,11 +93,11 @@ main {
 }
 
 #submit:hover,
-#change-photo:hover {
+#change-photo:hover, #save:hover {
   background-color: #b4c2b7;
 }
 
-#logout:hover {
+#logout:hover, #cancel:hover {
   background-color: #d29d9d;
 }
 
@@ -196,4 +196,45 @@ form>div>input {
   width: 100%;
   cursor: pointer;
   border: none;
+}
+
+/* Media Queries for Mobile Adaptation */
+@media only screen and (max-width: 768px) { 
+  #profile-container {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  #profile-settings {
+    flex-direction: column; /* Stack settings buttons vertically */
+  }
+
+  #profile-photo {
+    margin: 0 auto 20px; /* Center the photo */
+    display: block; /* Center the photo */
+  }
+
+  #photo-container {
+    margin: 0 auto; /* Center the photo container */
+    padding-bottom: 20px; /* Add spacing below */
+  }
+
+  #profile-header {
+    flex-direction: column; /* Stack header elements vertically */
+    align-items: center;  /* Center content in the header */
+    text-align: center;  /* Center text within the header */
+  }
+
+  #profile-form {
+    grid-template-columns: 1fr; /* Force single column form layout */
+  }
+
+  /* Reduce spacing around form elements on smaller screens */
+  #profile-form form > div > h3 { 
+    margin-top: 15px; 
+  }
+
+  .settings-container, #pref {
+    margin-right: 0; /* Remove right margin on smaller screens */
+    margin-bottom: 20px; /* Add spacing below */
+  }
 }
