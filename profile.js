@@ -42,6 +42,9 @@ profileForm.addEventListener('submit', function(event) {
   localStorage.setItem('email', email);
   localStorage.setItem('phone', phone);
   localStorage.setItem('location', location); 
+
+  // Alert user of successful update
+  alert('Profile updated successfully');
 });
 
 // Function to load data from local storage 
