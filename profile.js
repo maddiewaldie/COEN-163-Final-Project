@@ -54,11 +54,13 @@ function loadProfileData() {
   const storedEmail = localStorage.getItem('email');
   const storedPhone = localStorage.getItem('phone');
   const storedLocation = localStorage.getItem('location');
+  const storedImagePath = localStorage.getItem('profilePhoto');
 
   const profileName = document.querySelector('.profile-name');
   const profileEmail = document.querySelector('.profile-email');
   const profilePhone = document.querySelector('.profile-phone');
   const profileLocation = document.querySelector('.profile-location');
+  const profilePhoto = document.getElementById('profile-photo');
 
   if (storedFirstName && storedLastName) {
     profileName.innerText = `${storedFirstName} ${storedLastName}`;
@@ -66,10 +68,47 @@ function loadProfileData() {
     profilePhone.textContent = storedPhone;
     profileLocation.textContent = storedLocation;
   }
+
+  if (storedImagePath) {
+    profilePhoto.src = storedImagePath;
+  }
 }
 
 // Call the function to load profile data on page load
 loadProfileData();
+
+// Function to clear preferences
+function clearPreferences() {
+  // Reset cat form
+  const catForm = document.getElementById('catQualities');
+  if (catForm) {
+    catForm.querySelectorAll('input[type="checkbox"]').forEach(checkbox => checkbox.checked = false);
+  }
+
+  // Reset dog form
+  const dogForm = document.getElementById('dogQualities');
+  if (dogForm) {
+    dogForm.querySelectorAll('input[type="checkbox"]').forEach(checkbox => checkbox.checked = false);
+  }
+}
+
+const submitButton = document.getElementById('save');
+const cancelButton = document.getElementById('cancel'); // Assuming you have a cancel button
+
+if (submitButton) {
+  submitButton.addEventListener('click', function() {
+    clearPreferences(); // Call clearPreferences on submit button click
+    alert('Profile updated successfully');
+  });
+}
+
+
+
+if (cancelButton) {
+  cancelButton.addEventListener('click', function() {
+    clearPreferences(); // Call clearPreferences on cancel button click
+  });
+}
 
 const changePhotoButton = document.getElementById('change-photo');
 const profilePhoto = document.getElementById('profile-photo');
@@ -81,15 +120,16 @@ changePhotoButton.addEventListener('click', function() {
 
   fileInput.addEventListener('change', function(event) {
     const file = event.target.files[0];
+
+    // Store the file path for retrieving later
     const reader = new FileReader();
-
     reader.addEventListener('load', function(event) {
-      profilePhoto.src = event.target.result;
-      localStorage.setItem('profilePhoto', event.target.result); 
-    });
+      const imagePath = event.target.result;
+      localStorage.setItem('profilePhoto', imagePath); 
 
-    localStorage.setItem('testKey', 'testValue');
-    console.log(localStorage.getItem('testKey')); 
+      // Update the image src directly
+      profilePhoto.src = imagePath;
+    });
 
     reader.readAsDataURL(file);
   });
