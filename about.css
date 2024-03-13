@@ -1,35 +1,72 @@
 .accordion {
-    background-color: #f3f1f1;
-    color: #666666;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+  background: #d9d2cc;
+  color: #666666;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 1.3em;
+  font-weight: bolder;
+  font-family: "Inika";
 }
 
-.active, .accordion:hover {
-    background-color: #d0d2cc;
+.active,
+.accordion:hover {
+  background-color: #d0d2cc;
 }
 
 .accordion:after {
-    content: '\002B';
-    color: #a3c3aa;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2212";
-    color: #d18585;
-  }
-  
-  .panel {
-    padding: 0 18px;
-    background-color: #f3f1f1;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
+  content: "\002B";
+  color: #a3c3aa;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+  color: #d18585;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #f3f1f1;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+main {
+  flex-direction: column;
+  color: #393737;
+  background: #f3f1f1;
+  margin-top: 25px;
+  padding: 20px 40px;
+  border-radius: 20px;
+}
+
+main h2 {
+  margin-bottom: 20px;
+}
+
+main button {
+  background-color: #ffae00;
+  color: #794424;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+main button,
+main .panel {
+  border-radius: 10px;
+}
+
+main h2 {
+  font-family: "Wendy One";
+  font-size: 2em;
+}
