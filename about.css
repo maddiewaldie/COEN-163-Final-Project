@@ -2,7 +2,6 @@
     background-color: #f3f1f1;
     color: #666666;
     cursor: pointer;
-    padding: 5%;
     width: 100%;
     text-align: left;
     border: none;
@@ -24,11 +23,12 @@
   
   .active:after {
     content: "\2212";
+    color: #d18585;
   }
   
   .panel {
     padding: 0 18px;
-    background-color: #d18585;
+    background-color: #f3f1f1;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
