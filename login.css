@@ -136,6 +136,7 @@ span.psw {
 .valid:before {
   position: relative;
   left: -35px;
+  font-family: Helvetica;
   content: "✅";
 }
 
@@ -147,6 +148,7 @@ span.psw {
 .invalid:before {
   position: relative;
   left: -35px;
+  font-family: Helvetica;
   content: "⚠️";
 }
 
