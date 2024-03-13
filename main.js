@@ -112,3 +112,7 @@ function goToDiscover() {
 function goToLogin() {
   window.location.href = "index.html";
 }
+
+function goToAbout() {
+  window.location.href = "about.html";
+}
