@@ -136,7 +136,7 @@ span.psw {
 .valid:before {
   position: relative;
   left: -35px;
-  content: "&#10004;";
+  content: "✅";
 }
 
 /* Add a red text color and an "x" when the requirements are wrong */
@@ -147,7 +147,7 @@ span.psw {
 .invalid:before {
   position: relative;
   left: -35px;
-  content: "&#10006;";
+  content: "⚠️";
 }
 
 /* The Close Button (x) */
